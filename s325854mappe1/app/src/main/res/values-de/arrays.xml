@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="Regnestykker">
+        <item>2+2</item>
+        <item>6+3</item>
+        <item>3+7</item>
+        <item>1+5</item>
+        <item>2+4</item>
+        <item>4+3</item>
+        <item>8+7</item>
+        <item>6+5</item>
+        <item>9+8</item>
+        <item>20+63</item>
+        <item>3+74</item>
+        <item>1+53</item>
+        <item>21+7</item>
+        <item>26+34</item>
+        <item>13+17</item>
+        <item>15+85</item>
+        <item>62+26</item>
+        <item>27+53</item>
+        <item>36+76</item>
+        <item>3+700</item>
+        <item>10+544</item>
+        <item>20+265</item>
+        <item>265+653</item>
+        <item>643+6545</item>
+        <item>987+16995</item>
+    </string-array>
+    <string-array name="Svar">
+        <item>4</item>
+        <item>9</item>
+        <item>10</item>
+        <item>6</item>
+        <item>6</item>
+        <item>7</item>
+        <item>15</item>
+        <item>11</item>
+        <item>17</item>
+        <item>83</item>
+        <item>77</item>
+        <item>54</item>
+        <item>28</item>
+        <item>50</item>
+        <item>30</item>
+        <item>100</item>
+        <item>88</item>
+        <item>80</item>
+        <item>112</item>
+        <item>703</item>
+        <item>554</item>
+        <item>285</item>
+        <item>913</item>
+        <item>7188</item>
+        <item>17982</item>
+    </string-array>
+</resources>

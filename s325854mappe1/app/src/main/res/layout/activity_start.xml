@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:theme="@style/startMenuButtons">
+
+    <!-- <LinearLayout android:layout_width="match_parent"android:layout_height="wrap_content"android:orientation="vertical"xmlns:android="http://schemas.android.com/apk/res/android"><Buttonandroid:id="@+id/schedule_button"android:layout_width="match_parent"android:layout_height="wrap_content"android:layout_marginTop="200dp"android:layout_marginLeft="40dp"android:layout_marginRight="40dp"android:onClick="scheduleJob"android:text="@string/schedule_job_button_text"/><Buttonandroid:id="@+id/cancel_button"android:layout_width="match_parent"android:layout_height="wrap_content"android:layout_marginLeft="40dp"android:layout_marginRight="40dp"android:onClick="cancelAllJobs"android:text="@string/cancel_all_jobs_button_text"/> </LinearLayout> -->
+
+    <Button
+        android:id="@+id/Btn_start_spill"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="48dp"
+        android:onClick="onButtonClick"
+        android:padding="16dp"
+        android:text="@string/start_spill"
+        android:layout_marginLeft="48dp"
+        android:layout_marginRight="48dp"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@id/Btn_se_statistikk"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+
+        android:id="@+id/Btn_se_statistikk"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:onClick="onButtonClick"
+
+        android:layout_marginLeft="48dp"
+        android:layout_marginRight="48dp"
+        android:padding="16dp"
+        android:text="@string/se_statistikk"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/Btn_preferanser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+
+        android:layout_marginLeft="48dp"
+        android:layout_marginRight="48dp"
+        android:onClick="onButtonClick"
+        android:padding="16dp"
+        android:text="@string/preferanser"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/Btn_se_statistikk" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/backgroundabstract"
+
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

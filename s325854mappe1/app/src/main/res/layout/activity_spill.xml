@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:id="@+id/constraintLayout">
+
+    <TextView
+        android:id="@+id/text_incorrectNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="32dp"
+        android:text="@string/number0"
+        android:theme="@style/TextViewIncorrectStyle"
+        app:layout_constraintBottom_toTopOf="@+id/text_displayedRegnestykke"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_correctNumber"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/text_incorrect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="32dp"
+        android:text="@string/Feil"
+        android:theme="@style/TextViewIncorrectStyle"
+        app:layout_constraintBottom_toTopOf="@+id/text_displayedRegnestykke"
+        app:layout_constraintEnd_toStartOf="@+id/text_incorrectNumber"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/text_correct"
+        app:layout_constraintTop_toBottomOf="@+id/text_correct"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/text_correct"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="272dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/riktige"
+        android:theme="@style/TextViewCorreStyle"
+        app:layout_constraintEnd_toStartOf="@+id/text_correctNumber"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/text_correctNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/number0"
+        android:theme="@style/TextViewCorreStyle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button_1"
+        android:layout_width="104dp"
+        android:layout_height="68dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginBottom="212dp"
+        android:onClick="updateAnswer"
+        android:text="@string/number1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/button_2"
+        android:layout_width="104dp"
+        android:layout_height="68dp"
+        android:layout_marginBottom="212dp"
+        android:onClick="updateAnswer"
+        android:text="@string/number2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/button_Enter"
+        app:layout_constraintHorizontal_bias="0.488"
+        app:layout_constraintStart_toEndOf="@+id/button_1" />
+
+    <Button
+        android:id="@+id/button_3"
+        android:layout_width="104dp"
+        android:layout_height="68dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="212dp"
+        android:onClick="updateAnswer"
+        android:text="@string/number3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/button_4"
+        android:layout_width="104dp"
+        android:layout_height="68dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginBottom="152dp"
+        android:onClick="updateAnswer"
+        android:text="@string/number4"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/button_5"
+        android:layout_width="104dp"
+        android:layout_height="68dp"
+        android:layout_marginBottom="152dp"
+        android:onClick="updateAnswer"
+        android:text="@string/number5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/button_Enter"
+        app:layout_constraintHorizontal_bias="0.511"
+        app:layout_constraintStart_toEndOf="@+id/button_4" />
+
+    <Button
+        android:id="@+id/button_6"
+        android:layout_width="104dp"
+        android:layout_height="68dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="152dp"
+        android:onClick="updateAnswer"
+        android:text="@string/number6"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/button_7"
+        android:layout_width="104dp"
+        android:layout_height="68dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginBottom="92dp"
+        android:onClick="updateAnswer"
+        android:text="@string/number7"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/button_8"
+        android:layout_width="104dp"
+        android:layout_height="68dp"
+        android:layout_marginBottom="92dp"
+        android:onClick="updateAnswer"
+        android:text="@string/number8"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/button_Enter"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/button_7" />
+
+    <Button
+        android:id="@+id/button_9"
+        android:layout_width="104dp"
+        android:layout_height="68dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="92dp"
+        android:onClick="updateAnswer"
+        android:text="@string/number9"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/button_Enter"
+        android:layout_width="104dp"
+        android:layout_height="68dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="32dp"
+        android:onClick="onAnswerGiven"
+        android:text="@string/enter"
+        android:theme="@style/markedButton"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+
+    <Button
+        android:id="@+id/button_00"
+        android:layout_width="208dp"
+        android:layout_height="68dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginBottom="32dp"
+        android:onClick="updateAnswer"
+        android:text="@string/number0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/button_Enter"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/backspace"
+        android:layout_width="26dp"
+        android:layout_height="20dp"
+        android:background="@mipmap/ic_backspace"
+        android:onClick="removeDigit"
+        app:layout_constraintBottom_toTopOf="@+id/button_2"
+        app:layout_constraintStart_toEndOf="@+id/text_Answer"
+        app:layout_constraintTop_toBottomOf="@+id/text_displayedRegnestykke">
+
+    </androidx.appcompat.widget.AppCompatImageButton>
+
+    <TextView
+        android:id="@+id/text_displayedRegnestykke"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="32sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.175" />
+
+    <TextView
+        android:id="@+id/text_Answer"
+        style="@android:style/Widget.EditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxWidth="160dp"
+        android:minWidth="48dp"
+        app:layout_constraintBottom_toTopOf="@+id/button_2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_displayedRegnestykke" />
+
+    <TextView
+        android:id="@+id/text_forklaring"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/forklaring"
+        app:layout_constraintBottom_toTopOf="@+id/button_1"
+        app:layout_constraintEnd_toStartOf="@+id/text_Answer"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_displayedRegnestykke" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
